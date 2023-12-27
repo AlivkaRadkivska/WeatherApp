@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="/">Home</a>
+            <a href="/weather/kyiv" class="active">Weather</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="weather-info">
+            <div class="cities">
+                <p class="desc">Choose another city:</p>
+                <a href="/weather/kyiv" class="menu-link">Kyiv</a>
+                <a href="/weather/tokio" class="menu-link">Tokio</a>
+                <a href="/weather/london" class="menu-link">London</a>
+                <a href="/weather/new york" class="menu-link">New York</a>
+            </div>
+            <div class="info">
+                <p class="info-title">Weather in {{weather.name}} right now:</p>
+                <p class="info-description">{{weather.weather.0.description}}</p>
+                <img src="http://openweathermap.org/img/wn/{{weather.weather.0.icon}}@2x.png" alt="image" class="img">
+                <div class="info-row">
+                    <p>Temperature:</p>
+                    <p>{{weather.main.temp}}°C</p>
+                </div>
+                <div class="info-row">
+                    <p>Pressure:</p>
+                    <p>{{weather.main.pressure}}hPa</p>
+                </div>
+                <div class="info-row">
+                    <p>Humidity</p>
+                    <p>{{weather.main.humidity}}%</p>
+                </div>
+                <div class="info-row">
+                    <p>Wind speed</p>
+                    <p>{{weather.wind.speed}}m/s</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

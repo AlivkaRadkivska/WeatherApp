@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="/">Home</a>
+            <a href="/weather/kyiv" class="active">Weather</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="weather-info">
+            <div class="cities">
+                <p class="desc">Choose a city:</p>
+                <a href="/weather/kyiv" class="menu-link">Kyiv</a>
+                <a href="/weather/tokio" class="menu-link">Tokio</a>
+                <a href="/weather/london" class="menu-link">London</a>
+                <a href="/weather/newyork" class="menu-link">New York</a>
+            </div>
+            <div class="info">
+                <p class="info-title">Error {{code}}</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
